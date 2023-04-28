@@ -1,4 +1,21 @@
+
 footer {
     background-color: $footer-color;
     color: $white-color;
+    padding: 22px 25px
+}
+
+footer h3 {
+    font-size: 18px;
+    margin: 0 0 9px 0;
+    line-height: 26px
+}
+
+footer div {
+    @include item-rowcenter;
+    gap: 11px;
+}
+
+footer p {
+    margin: 7px 0 0 0;
 }
