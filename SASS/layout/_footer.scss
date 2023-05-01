@@ -2,20 +2,41 @@
 footer {
     background-color: $footer-color;
     color: $white-color;
-    padding: 22px 25px
+    padding: 22px 25px;
+    @media screen and (min-width: 1440px) {
+        display: flex;
+        justify-content: flex-end;
+        padding: 30px 26.42px;
+        gap: 7px;
+    }
+    & h3 {
+        width: 137.58px;
+        font-size: 18px;
+        margin: 0 0 9px 0;
+        line-height: 26px;
+        @media screen and (min-width: 1440px) {
+            order: 3;
+            margin: 0 0 0 9px;
+        }
+    }
+    & div {
+        @include item-rowcenter;
+        gap: 11px;
+    }
+    & p {
+        margin: 7px 0 0 0;
+    }
 }
 
-footer h3 {
-    font-size: 18px;
-    margin: 0 0 9px 0;
-    line-height: 26px
+.fa-utensils, .fa-handshake-angle {
+    font-size: 13px;
 }
 
-footer div {
-    @include item-rowcenter;
-    gap: 11px;
-}
-
-footer p {
-    margin: 7px 0 0 0;
+.footer {
+    &-restaurant, &-partenaire {
+        width: 168px;
+    }
+    &-legal, &-contact {
+        width: 130px;
+    }
 }

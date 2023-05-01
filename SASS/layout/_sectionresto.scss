@@ -1,24 +1,74 @@
 .section-resto {
     background-color: $backgray-color;
-    padding: 17px;
+    padding: 54px 17px 66px 17px;
+    & h2 {
+        margin: 0 0 28px 3px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 490px;
+        @media screen and (min-width: 1440px) {
+            margin-left: 163px;
+        }
+    }
+    & nav {
+        @include item-colcenter;
+        gap: 18px;
+        @media screen and (min-width: 1440px) {
+            display: grid;
+            grid-template-columns: 490px 490px;
+            justify-content: center;
+            row-gap: 50px;
+            column-gap: 100px;
+        }
+    }
 }
 
 .card {
+    position: relative;
     width: 100%;
+    max-width: 490px;
     height: 251px;
     background-color: $white-color;
     border-radius: 15px;
+    & img {
+        object-fit: cover;
+        width: 100%;
+        height: 174px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
 }
 
-.card-img {
-    height: 174px;
-}
-
-.card-img img {
-    object-fit: fill;
-    height: 100%;
+.new {
+    display: block;
+    margin: 0px;
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    background: $third-color;
+    padding: 7px 9px 6px 9px;
+    border-radius: 2px;
+    box-shadow: 0px 2px 4px $boxshadow-color;
+    color: $green-color;
 }
 
 .card-txt {
-    height: 77px;
+    padding: 12px 13px;
+    & h3 {
+        margin: 0 0 5px 0;
+    }
+}
+
+.sous-titre {
+    margin: 0px;
+}
+
+.fa-heart {
+    position: absolute;
+    right: 25px;
+    bottom: 33px;
+    color: $black-color;
+    font-size: 21px;
+    line-height: thin ;
 }

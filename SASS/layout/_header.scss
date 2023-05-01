@@ -15,3 +15,17 @@ form {
     @include item-center;
     gap: 17px;
 }
+
+.fa-location-dot {
+    color: $footer-color;
+}
+
+.edittext {
+    background: $search-color;
+    border: none;
+    &::placeholder {
+        color: $footer-color;
+        font-size: 16px;
+        font-weight: 500;
+    }
+}

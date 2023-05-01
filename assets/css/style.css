@@ -3,12 +3,12 @@ body {
   margin: 0;
 }
 
-.font-titre {
+.font-logo {
   font-family: "Shrikhand", sans-serif;
   font-style: italic;
-  font-weight: 400;
 }
 
+/******************btn-section-exporation******************/
 .btn-gradient {
   height: 50px;
   width: 218px;
@@ -19,6 +19,33 @@ body {
   border: none;
   font-size: 16px;
   font-weight: 500;
+}
+
+/******************btn-section-fonctionnement******************/
+.selection-div {
+  position: relative;
+  margin-left: 12.51px;
+  display: flex;
+  align-items: center;
+  gap: 27px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  height: 72.38px;
+  width: 322.49px;
+  background: #F6F6F6;
+}
+
+.number {
+  width: 24px;
+  height: 24px;
+  background: #9356DC;
+  color: #FFFFFF;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: -12px;
 }
 
 header div {
@@ -44,40 +71,64 @@ form {
   gap: 17px;
 }
 
+.fa-location-dot {
+  color: #353535;
+}
+
+.edittext {
+  background: #EAEAEA;
+  border: none;
+}
+.edittext::placeholder {
+  color: #353535;
+  font-size: 16px;
+  font-weight: 500;
+}
+
 .section-explore {
   display: flex;
   flex-direction: column;
   align-items: center;
   background: #F6F6F6;
 }
+.section-explore h1 {
+  text-align: center;
+  margin: 39.5px 0 0 0;
+}
+.section-explore p {
+  text-align: center;
+  margin: 0 34px 27px 34px;
+}
+.section-explore .btn-gradient {
+  margin-bottom: 57px;
+}
 
 .section-fonct {
   margin: 48px 20px 68px 20px;
 }
-
-.selection-div {
-  margin-left: 12.51px;
-  display: flex;
-  align-items: center;
-  gap: 27px;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
-  border-radius: 20px;
-  height: 72.38px;
-  width: 322.49px;
-  background: #F6F6F6;
+.section-fonct h2 {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 26px;
+  width: 335px;
+}
+@media screen and (min-width: 1440px) {
+  .section-fonct h2 {
+    margin-left: 180px;
+  }
 }
 
-.number {
-  width: 24px;
-  height: 24px;
-  background: #9356DC;
-  color: #FFFFFF;
-  border-radius: 50%;
+.group-div {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  position: absolute;
-  left: 20px;
+  gap: 25px;
+}
+@media screen and (min-width: 1440px) {
+  .group-div {
+    flex-direction: row;
+    margin-left: 180px;
+  }
 }
 
 .selection-div i {
@@ -86,27 +137,83 @@ form {
 
 .section-resto {
   background-color: #F6F6F6;
-  padding: 17px;
+  padding: 54px 17px 66px 17px;
+}
+.section-resto h2 {
+  margin: 0 0 28px 3px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 490px;
+}
+@media screen and (min-width: 1440px) {
+  .section-resto h2 {
+    margin-left: 163px;
+  }
+}
+.section-resto nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+@media screen and (min-width: 1440px) {
+  .section-resto nav {
+    display: grid;
+    grid-template-columns: 490px 490px;
+    justify-content: center;
+    row-gap: 50px;
+    column-gap: 100px;
+  }
 }
 
 .card {
+  position: relative;
   width: 100%;
+  max-width: 490px;
   height: 251px;
   background-color: #FFFFFF;
   border-radius: 15px;
 }
-
-.card-img {
+.card img {
+  object-fit: cover;
+  width: 100%;
   height: 174px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
-.card-img img {
-  object-fit: fill;
-  height: 100%;
+.new {
+  display: block;
+  margin: 0px;
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  background: #99E2D0;
+  padding: 7px 9px 6px 9px;
+  border-radius: 2px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  color: #008766;
 }
 
 .card-txt {
-  height: 77px;
+  padding: 12px 13px;
+}
+.card-txt h3 {
+  margin: 0 0 5px 0;
+}
+
+.sous-titre {
+  margin: 0px;
+}
+
+.fa-heart {
+  position: absolute;
+  right: 25px;
+  bottom: 33px;
+  color: #101010;
+  font-size: 21px;
+  line-height: thin;
 }
 
 footer {
@@ -114,19 +221,42 @@ footer {
   color: #FFFFFF;
   padding: 22px 25px;
 }
-
+@media screen and (min-width: 1440px) {
+  footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px 26.42px;
+    gap: 7px;
+  }
+}
 footer h3 {
+  width: 137.58px;
   font-size: 18px;
   margin: 0 0 9px 0;
   line-height: 26px;
 }
-
+@media screen and (min-width: 1440px) {
+  footer h3 {
+    order: 3;
+    margin: 0 0 0 9px;
+  }
+}
 footer div {
   display: flex;
   align-items: center;
   gap: 11px;
 }
-
 footer p {
   margin: 7px 0 0 0;
+}
+
+.fa-utensils, .fa-handshake-angle {
+  font-size: 13px;
+}
+
+.footer-restaurant, .footer-partenaire {
+  width: 168px;
+}
+.footer-legal, .footer-contact {
+  width: 130px;
 }/*# sourceMappingURL=style.css.map */
