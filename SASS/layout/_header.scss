@@ -1,4 +1,4 @@
-header div {
+.header-logo {
     height: 63px;
     width: 100%;
     @include item-center;
@@ -28,4 +28,10 @@ form {
         font-size: 16px;
         font-weight: 500;
     }
+}
+
+.fa-arrow-left-long {
+    position: absolute;
+    top: 24px;
+    left: 23px;
 }

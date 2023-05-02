@@ -1,0 +1,34 @@
+.img-page {
+    object-fit: cover;
+    width: 100%;
+    height: 275px;
+}
+
+.section-page {
+    background: $backgray-color;
+    border-radius: 30px;
+    padding: 13px;
+    position: relative;
+    top: -55px;
+}
+
+.titre-heart {
+    display: flex;
+}
+
+.card-page {
+    background: $white-color;
+    border-radius: 15px;
+    padding: 12px 15px;
+    margin-top: 12px;
+    & h4 {
+        margin: 0 0 5px 0;
+    }
+    & div {
+        display: flex;
+        justify-content: space-between;
+    }
+    & p {
+        margin: 0;
+    }
+}
