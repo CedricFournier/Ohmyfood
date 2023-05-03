@@ -1,11 +1,47 @@
 body {
   font-family: "Roboto", sans-serif;
-  margin: 0;
 }
 
 .font-logo {
   font-family: "Shrikhand", sans-serif;
   font-style: italic;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1.font-logo {
+  font-size: 30px;
+}
+
+h2.font-logo {
+  font-size: 28px;
+}
+
+h3.titre-menu {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.ingredient {
+  font-size: 15.04px;
+  font-weight: 300;
+}
+
+.euro {
+  font-size: 15.04px;
+  font-weight: 700;
 }
 
 /******************btn-section-exporation******************/
@@ -46,6 +82,12 @@ body {
   justify-content: center;
   position: absolute;
   left: -12px;
+}
+
+.fa-heart {
+  color: #101010;
+  font-size: 21px;
+  line-height: thin;
 }
 
 .header-logo {
@@ -217,9 +259,12 @@ form {
   position: absolute;
   right: 25px;
   bottom: 33px;
-  color: #101010;
-  font-size: 21px;
-  line-height: thin;
+}
+
+.main-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .img-page {
@@ -230,14 +275,44 @@ form {
 
 .section-page {
   background: #F6F6F6;
-  border-radius: 30px;
-  padding: 13px;
+  border-radius: 30px 30px 0 0;
+  padding: 32px 0 40px 0;
   position: relative;
-  top: -55px;
+  margin-top: -55px;
+  width: 100%;
+  max-width: 1055px;
 }
 
 .titre-heart {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 28px 2px 0;
+}
+.titre-heart h2 {
+  margin: 0 24px 0 17px;
+}
+@media screen and (min-width: 1024px) {
+  .titre-heart {
+    justify-content: center;
+  }
+}
+
+.menu {
+  padding: 0 13px 0 13px;
+  max-width: 608px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.titre-menu {
+  margin: 40px 0 0 0;
+}
+
+hr {
+  margin: 3px 0 0 0;
+  border: 1.5px solid #99E2D0;
+  width: 37px;
 }
 
 .card-page {
@@ -257,6 +332,13 @@ form {
   margin: 0;
 }
 
+.btn-commander {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px 0 0 0;
+}
+
 footer {
   background-color: #353535;
   color: #FFFFFF;
@@ -274,7 +356,6 @@ footer h3 {
   width: 137.58px;
   font-size: 18px;
   margin: 0 0 9px 0;
-  line-height: 26px;
 }
 @media screen and (min-width: 1440px) {
   footer h3 {
@@ -300,9 +381,4 @@ footer p {
 }
 .footer-legal, .footer-contact {
   width: 130px;
-}
-
-.footer-page {
-  position: relative;
-  top: -55px;
 }/*# sourceMappingURL=style.css.map */

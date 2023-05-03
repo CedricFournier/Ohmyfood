@@ -1,3 +1,7 @@
+.main-page {
+    @include item-colcenter;
+}
+
 .img-page {
     object-fit: cover;
     width: 100%;
@@ -6,14 +10,42 @@
 
 .section-page {
     background: $backgray-color;
-    border-radius: 30px;
-    padding: 13px;
+    border-radius: 30px 30px 0 0;
+    padding: 32px 0 40px 0;
     position: relative;
-    top: -55px;
+    margin-top: -55px;
+    width: 100%;
+    max-width: 1055px;
 }
 
 .titre-heart {
-    display: flex;
+    @include item-rowcenter;
+    justify-content: space-between;
+    margin: 0 28px 2px 0;
+    & h2 {
+        margin: 0 24px 0 17px;
+    }
+    @media screen and (min-width: 1024px) {
+        justify-content: center;
+    }
+
+}
+
+.menu {
+    padding: 0 13px 0 13px;
+    max-width: 608px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.titre-menu {
+    margin: 40px 0 0 0;
+}
+
+hr {
+    margin: 3px 0 0 0;
+    border: 1.5px solid #99E2D0;
+  	width: 37px;
 }
 
 .card-page {
@@ -31,4 +63,9 @@
     & p {
         margin: 0;
     }
+}
+
+.btn-commander {
+    @include item-colcenter;
+    margin: 40px 0 0 0;
 }

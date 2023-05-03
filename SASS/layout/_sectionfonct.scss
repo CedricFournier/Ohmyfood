@@ -12,9 +12,7 @@
 }
 
 .group-div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include item-colcenter;
     gap: 25px;
     @media screen and (min-width: 1440px) {
         flex-direction: row;
