@@ -51,10 +51,29 @@ h4 {
   color: #FFFFFF;
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   border-radius: 25px;
-  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
   border: none;
   font-size: 16px;
   font-weight: 500;
+  position: relative;
+  z-index: 1;
+}
+.btn-gradient:hover::after {
+  opacity: 1;
+}
+.btn-gradient::after {
+  border-radius: 25px;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 250ms;
 }
 
 /******************btn-section-fonctionnement******************/
@@ -84,10 +103,26 @@ h4 {
   left: -12px;
 }
 
-.fa-heart {
-  color: #101010;
+.emptyheart {
   font-size: 21px;
-  line-height: thin;
+  color: black;
+  position: relative;
+}
+.emptyheart:hover .fullheart {
+  opacity: 1;
+}
+
+.fullheart {
+  font-size: 21px;
+  background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 250ms;
 }
 
 .header-logo {
