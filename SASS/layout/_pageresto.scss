@@ -48,23 +48,6 @@ hr {
   	width: 37px;
 }
 
-.card-page {
-    background: $white-color;
-    border-radius: 15px;
-    padding: 12px 15px;
-    margin-top: 12px;
-    & h4 {
-        margin: 0 0 5px 0;
-    }
-    & div {
-        display: flex;
-        justify-content: space-between;
-    }
-    & p {
-        margin: 0;
-    }
-}
-
 .btn-commander {
     @include item-colcenter;
     margin: 40px 0 0 0;

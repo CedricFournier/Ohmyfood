@@ -1,4 +1,4 @@
-/******************btn-section-exporation******************/
+/******************btn-section-exploration******************/
 .btn-gradient {
     height: 50px;
     width: 218px;
@@ -56,26 +56,37 @@
     left: -12px;
 }
 
-.emptyheart {
-    font-size: 21px;
-    color: black;
-    position: relative;
-    &:hover {
-        & .fullheart {
-            opacity: 1;
-        }
+/******************btn-page-menu-resto******************/
+.card-page {
+    display: flex;
+    justify-content: space-between;
+    background: $white-color;
+    border-radius: 15px;
+    padding: 0;
+    margin-top: 12px;
+    cursor: pointer;
+
+    & h4 {
+        margin: 12px 0 5px 0;
+    }
+    & p {
+        margin: 0;
     }
 }
 
-.fullheart {
-    font-size: 21px;
-    background-image: $lineargradient-color;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: opacity 250ms;
+.card-page:hover .slideX {
+    transform: translate(-59px);
+    
+}
+
+.slideX {
+    transition: transform 500ms ease-in-out;
+}
+
+.animation-menu {
+    @include item-center;
+    width: 59px;
+    height: 69px;
+    background: $third-color;
+    margin: -1rem -5rem -1rem 1rem;
 }

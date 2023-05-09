@@ -1,0 +1,24 @@
+/******************animation-heart******************/
+.emptyheart {
+    font-size: 21px;
+    color: black;
+    position: relative;
+    &:hover {
+        & .fullheart {
+            opacity: 1;
+        }
+    }
+}
+
+.fullheart {
+    font-size: 21px;
+    background: $lineargradient-color;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 250ms;
+}

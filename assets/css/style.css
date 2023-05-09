@@ -44,7 +44,7 @@ h4 {
   font-weight: 700;
 }
 
-/******************btn-section-exporation******************/
+/******************btn-section-exploration******************/
 .btn-gradient {
   height: 50px;
   width: 218px;
@@ -103,6 +103,42 @@ h4 {
   left: -12px;
 }
 
+/******************btn-page-menu-resto******************/
+.card-page {
+  display: flex;
+  justify-content: space-between;
+  background: #FFFFFF;
+  border-radius: 15px;
+  padding: 0;
+  margin-top: 12px;
+  cursor: pointer;
+}
+.card-page h4 {
+  margin: 12px 0 5px 0;
+}
+.card-page p {
+  margin: 0;
+}
+
+.card-page:hover .slideX {
+  transform: translate(-59px);
+}
+
+.slideX {
+  transition: transform 500ms ease-in-out;
+}
+
+.animation-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 59px;
+  height: 69px;
+  background: #99E2D0;
+  margin: -1rem -5rem -1rem 1rem;
+}
+
+/******************animation-heart******************/
 .emptyheart {
   font-size: 21px;
   color: black;
@@ -114,7 +150,7 @@ h4 {
 
 .fullheart {
   font-size: 21px;
-  background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -348,23 +384,6 @@ hr {
   margin: 3px 0 0 0;
   border: 1.5px solid #99E2D0;
   width: 37px;
-}
-
-.card-page {
-  background: #FFFFFF;
-  border-radius: 15px;
-  padding: 12px 15px;
-  margin-top: 12px;
-}
-.card-page h4 {
-  margin: 0 0 5px 0;
-}
-.card-page div {
-  display: flex;
-  justify-content: space-between;
-}
-.card-page p {
-  margin: 0;
 }
 
 .btn-commander {
