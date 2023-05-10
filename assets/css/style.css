@@ -166,10 +166,6 @@ footer p {
   margin-right: 0;
 }
 
-.card-page:hover .fa-circle-check {
-  transform: rotate(0);
-}
-
 .sliceX {
   display: flex;
   margin-right: -59px;
@@ -194,8 +190,6 @@ footer p {
 .fa-circle-check {
   font-size: 20px;
   color: #FFFFFF;
-  transform: rotate(180deg);
-  transition: transform 1s;
 }
 
 /******************animation-heart******************/
