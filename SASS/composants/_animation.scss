@@ -1,45 +1,4 @@
-/******************animation-heart*******************/
-.emptyheart {
-    font-size: 21px;
-    color: black;
-    position: relative;
-    &:hover {
-        & .fullheart {
-            opacity: 1;
-        }
-    }
-}
-
-.fullheart {
-    font-size: 21px;
-    background: $lineargradient-color;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: opacity 250ms;
-}
-
-@keyframes appearance {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@for $i from 1 through 13 {
-    .visible#{$i} {
-        animation: appearance forwards;
-        animation-duration: 500ms;
-        animation-delay: $i * 500ms;
-    }
-}
-
+/******************animation-loader*******************/
 .loader {
     position: fixed;
     width: 100%;
@@ -73,5 +32,48 @@
     to {
         z-index: -1;
         opacity: 0;
+    }
+}
+
+/******************animation-heart*******************/
+.emptyheart {
+    font-size: 21px;
+    color: black;
+    position: relative;
+    &:hover {
+        & .fullheart {
+            opacity: 1;
+        }
+    }
+}
+
+.fullheart {
+    font-size: 21px;
+    background: $lineargradient-color;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 250ms;
+}
+
+/******************animation-menu-appearrance*******************/
+@keyframes appearance {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@for $i from 1 through 13 {
+    .visible#{$i} {
+        animation: appearance forwards;
+        animation-duration: 300ms;
+        animation-delay: $i * 300ms;
     }
 }

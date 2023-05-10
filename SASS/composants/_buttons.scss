@@ -67,6 +67,9 @@
     cursor: pointer;
     overflow: hidden;
     opacity: 0;
+    &:hover .sliceX {
+        margin-right: 0;
+    }
     & .div-ingredient {
         padding: 12px 0 12px 15px;
         white-space: nowrap;
@@ -87,14 +90,10 @@
     }
 }
 
-.card-page:hover .sliceX {
-    margin-right: 0;
-}
-
 .sliceX {
     display: flex;
     margin-right: -59px;
-    transition: 1s ease-in-out;
+    transition: 500ms ease-in-out;
 }
 
 .div-euro {
