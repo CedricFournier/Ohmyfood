@@ -2,6 +2,32 @@ h1.font-logo {
     font-size: 30px;
 }
 
+.section-explore {
+    & h1 {
+        font-weight: 700;
+    }
+    & p {
+        font-size: 18px;
+        font-weight: 300;
+    }
+}
+
+.section-fonct {
+    & h2 {
+        font-weight: 700;
+    }
+}
+
+.section-resto {
+    & h2 {
+        font-weight: 700;
+    }
+    & h3 {
+        font-size: 18px;
+        font-weight: 700;
+    }
+}
+
 h2.font-logo {
     font-size: 28px;
 }
@@ -24,4 +50,12 @@ h4 {
 .euro {
     font-size: 15.04px;
     font-weight: 700;
+}
+
+footer p {
+    font-weight: 500;
+}
+
+.footer-contact {
+    font-weight: 400;
 }

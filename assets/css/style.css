@@ -20,6 +20,26 @@ h1.font-logo {
   font-size: 30px;
 }
 
+.section-explore h1 {
+  font-weight: 700;
+}
+.section-explore p {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.section-fonct h2 {
+  font-weight: 700;
+}
+
+.section-resto h2 {
+  font-weight: 700;
+}
+.section-resto h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
 h2.font-logo {
   font-size: 28px;
 }
@@ -42,6 +62,14 @@ h4 {
 .euro {
   font-size: 15.04px;
   font-weight: 700;
+}
+
+footer p {
+  font-weight: 500;
+}
+
+.footer-contact {
+  font-weight: 400;
 }
 
 /******************btn-section-exploration******************/
@@ -101,6 +129,7 @@ h4 {
   justify-content: center;
   position: absolute;
   left: -12px;
+  font-size: 14.18px;
 }
 
 /******************btn-page-menu-resto******************/
@@ -109,23 +138,48 @@ h4 {
   justify-content: space-between;
   background: #FFFFFF;
   border-radius: 15px;
-  padding: 0;
   margin-top: 12px;
   cursor: pointer;
+  overflow: hidden;
+  opacity: 0;
+}
+.card-page .div-ingredient {
+  padding: 12px 0 12px 15px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .card-page h4 {
-  margin: 12px 0 5px 0;
+  margin: 0 0 5px 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .card-page p {
   margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
-.card-page:hover .slideX {
-  transform: translate(-59px);
+.card-page:hover .sliceX {
+  margin-right: 0;
 }
 
-.slideX {
-  transition: transform 500ms ease-in-out;
+.card-page:hover .fa-circle-check {
+  transform: rotate(0);
+}
+
+.sliceX {
+  display: flex;
+  margin-right: -59px;
+  transition: 1s ease-in-out;
+}
+
+.div-euro {
+  display: flex;
+  align-items: flex-end;
+  padding: 0 15px 12px 15px;
 }
 
 .animation-menu {
@@ -135,7 +189,13 @@ h4 {
   width: 59px;
   height: 69px;
   background: #99E2D0;
-  margin: -1rem -5rem -1rem 1rem;
+}
+
+.fa-circle-check {
+  font-size: 20px;
+  color: #FFFFFF;
+  transform: rotate(180deg);
+  transition: transform 1s;
 }
 
 /******************animation-heart******************/
@@ -161,6 +221,128 @@ h4 {
   transition: opacity 250ms;
 }
 
+@keyframes appearance {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.visible1 {
+  animation: appearance forwards;
+  animation-duration: 500ms;
+  animation-delay: 500ms;
+}
+
+.visible2 {
+  animation: appearance forwards;
+  animation-duration: 500ms;
+  animation-delay: 1000ms;
+}
+
+.visible3 {
+  animation: appearance forwards;
+  animation-duration: 500ms;
+  animation-delay: 1500ms;
+}
+
+.visible4 {
+  animation: appearance forwards;
+  animation-duration: 500ms;
+  animation-delay: 2000ms;
+}
+
+.visible5 {
+  animation: appearance forwards;
+  animation-duration: 500ms;
+  animation-delay: 2500ms;
+}
+
+.visible6 {
+  animation: appearance forwards;
+  animation-duration: 500ms;
+  animation-delay: 3000ms;
+}
+
+.visible7 {
+  animation: appearance forwards;
+  animation-duration: 500ms;
+  animation-delay: 3500ms;
+}
+
+.visible8 {
+  animation: appearance forwards;
+  animation-duration: 500ms;
+  animation-delay: 4000ms;
+}
+
+.visible9 {
+  animation: appearance forwards;
+  animation-duration: 500ms;
+  animation-delay: 4500ms;
+}
+
+.visible10 {
+  animation: appearance forwards;
+  animation-duration: 500ms;
+  animation-delay: 5000ms;
+}
+
+.visible11 {
+  animation: appearance forwards;
+  animation-duration: 500ms;
+  animation-delay: 5500ms;
+}
+
+.visible12 {
+  animation: appearance forwards;
+  animation-duration: 500ms;
+  animation-delay: 6000ms;
+}
+
+.visible13 {
+  animation: appearance forwards;
+  animation-duration: 500ms;
+  animation-delay: 6500ms;
+}
+
+.loader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #99E2D0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  animation: load-end 1s forwards;
+  animation-delay: 3S;
+}
+.loader i {
+  font-size: 100px;
+  animation: load-rotate 1s cubic-bezier(0, 0, 0.18, 0.95);
+  animation-iteration-count: 3;
+}
+
+@keyframes load-rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes load-end {
+  from {
+    z-index: 10;
+    opacity: 1;
+  }
+  to {
+    z-index: -1;
+    opacity: 0;
+  }
+}
 .header-logo {
   height: 63px;
   width: 100%;
@@ -194,6 +376,7 @@ form {
 }
 .edittext::placeholder {
   color: #353535;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
 }
@@ -214,16 +397,36 @@ form {
   text-align: center;
   margin: 39.5px 0 0 0;
 }
+@media screen and (min-width: 1440px) {
+  .section-explore h1 {
+    margin: 30px 0 18px 0;
+  }
+}
 .section-explore p {
   text-align: center;
   margin: 0 34px 27px 34px;
 }
+@media screen and (min-width: 1440px) {
+  .section-explore p {
+    margin: 0 34px 18px 34px;
+  }
+}
 .section-explore .btn-gradient {
   margin-bottom: 57px;
+}
+@media screen and (min-width: 1440px) {
+  .section-explore .btn-gradient {
+    margin-bottom: 30px;
+  }
 }
 
 .section-fonct {
   margin: 48px 20px 68px 20px;
+}
+@media screen and (min-width: 11440px) {
+  .section-fonct {
+    margin: 50px 20px;
+  }
 }
 .section-fonct h2 {
   margin-left: auto;
@@ -254,9 +457,22 @@ form {
   margin-left: 34.49px;
 }
 
+.fa-color {
+  color: #7E7E7E;
+}
+
+.fa-store {
+  color: #9356DC;
+}
+
 .section-resto {
   background-color: #F6F6F6;
   padding: 54px 17px 66px 17px;
+}
+@media screen and (min-width: 1440px) {
+  .section-resto {
+    padding: 30px 17px;
+  }
 }
 .section-resto h2 {
   margin: 0 0 28px 3px;
@@ -267,7 +483,7 @@ form {
 }
 @media screen and (min-width: 1440px) {
   .section-resto h2 {
-    margin-left: 163px;
+    margin: 0 0 28px 163px;
   }
 }
 .section-resto nav {
@@ -313,6 +529,8 @@ form {
   border-radius: 2px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
   color: #008766;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .card-txt {
@@ -324,6 +542,8 @@ form {
 
 .sous-titre {
   margin: 0px;
+  font-weight: 300;
+  font-size: 17px;
 }
 
 .resto-heart {
@@ -353,6 +573,11 @@ form {
   width: 100%;
   max-width: 1055px;
 }
+@media screen and (min-width: 1440px) {
+  .section-page {
+    padding: 51px 0 40px 0;
+  }
+}
 
 .titre-heart {
   display: flex;
@@ -363,7 +588,7 @@ form {
 .titre-heart h2 {
   margin: 0 24px 0 17px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
   .titre-heart {
     justify-content: center;
   }
@@ -378,12 +603,14 @@ form {
 
 .titre-menu {
   margin: 40px 0 0 0;
+  opacity: 0;
 }
 
 hr {
   margin: 3px 0 0 0;
   border: 1.5px solid #99E2D0;
   width: 37px;
+  opacity: 0;
 }
 
 .btn-commander {
@@ -425,8 +652,12 @@ footer div {
 footer p {
   margin: 7px 0 0 0;
 }
+footer a {
+  color: #FFFFFF;
+}
 
 .fa-utensils, .fa-handshake-angle {
+  margin-top: 7px;
   font-size: 13px;
 }
 

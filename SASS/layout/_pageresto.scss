@@ -16,6 +16,9 @@
     margin-top: -55px;
     width: 100%;
     max-width: 1055px;
+    @media screen and (min-width: 1440px) {
+        padding: 51px 0 40px 0;
+    }
 }
 
 .titre-heart {
@@ -25,7 +28,7 @@
     & h2 {
         margin: 0 24px 0 17px;
     }
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 1440px) {
         justify-content: center;
     }
 
@@ -40,12 +43,14 @@
 
 .titre-menu {
     margin: 40px 0 0 0;
+    opacity: 0;
 }
 
 hr {
     margin: 3px 0 0 0;
     border: 1.5px solid #99E2D0;
   	width: 37px;
+    opacity: 0;
 }
 
 .btn-commander {

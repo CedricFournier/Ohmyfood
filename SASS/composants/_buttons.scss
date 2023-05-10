@@ -54,6 +54,7 @@
     @include item-center;
     position: absolute;
     left: -12px;
+    font-size: 14.18px;
 }
 
 /******************btn-page-menu-resto******************/
@@ -62,31 +63,60 @@
     justify-content: space-between;
     background: $white-color;
     border-radius: 15px;
-    padding: 0;
     margin-top: 12px;
     cursor: pointer;
-
+    overflow: hidden;
+    opacity: 0;
+    & .div-ingredient {
+        padding: 12px 0 12px 15px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
     & h4 {
-        margin: 12px 0 5px 0;
+        margin: 0 0 5px 0;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
     & p {
         margin: 0;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
 }
 
-.card-page:hover .slideX {
-    transform: translate(-59px);
-    
+.card-page:hover .sliceX {
+    margin-right: 0;
 }
 
-.slideX {
-    transition: transform 500ms ease-in-out;
+.card-page:hover .fa-circle-check {
+    transform: rotate(0);
+}
+
+.sliceX {
+    display: flex;
+    margin-right: -59px;
+    transition: 1s ease-in-out;
+}
+
+.div-euro {
+    display: flex;
+    align-items: flex-end;
+    padding: 0 15px 12px 15px;
 }
 
 .animation-menu {
     @include item-center;
     width: 59px;
     height: 69px;
-    background: $third-color;
-    margin: -1rem -5rem -1rem 1rem;
+    background: $third-color; 
+}
+
+.fa-circle-check {
+    font-size: 20px;
+    color: $white-color;
+    transform: rotate(180deg);
+    transition: transform 1s;
 }

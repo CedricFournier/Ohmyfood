@@ -1,5 +1,8 @@
 .section-fonct {
     margin: 48px 20px 68px 20px;
+    @media screen and (min-width: 11440px) {
+        margin: 50px 20px;
+    }
     & h2 {
         margin-left: auto;
         margin-right: auto;
@@ -22,4 +25,12 @@
 
 .selection-div i {
     margin-left: 34.49px;
+}
+
+.fa-color {
+    color: $grey-color;
+}
+
+.fa-store {
+    color: $primary-color;
 }

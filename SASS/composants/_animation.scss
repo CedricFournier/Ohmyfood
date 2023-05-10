@@ -22,3 +22,56 @@
     opacity: 0;
     transition: opacity 250ms;
 }
+
+@keyframes appearance {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@for $i from 1 through 13 {
+    .visible#{$i} {
+        animation: appearance forwards;
+        animation-duration: 500ms;
+        animation-delay: $i * 500ms;
+    }
+}
+
+.loader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: $third-color;
+    @include item-center;
+    z-index: 10;
+    animation: load-end 1s forwards;
+    animation-delay: 3S;
+    & i {
+        font-size: 100px;
+        animation: load-rotate 1s cubic-bezier(0, 0, 0.18, 0.95);
+        animation-iteration-count: 3;
+    }
+}
+
+@keyframes load-rotate {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes load-end {
+    from {
+        z-index: 10;
+        opacity: 1;
+    }
+    to {
+        z-index: -1;
+        opacity: 0;
+    }
+}

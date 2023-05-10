@@ -4,12 +4,21 @@
     & h1 {
         text-align: center;
         margin: 39.5px 0 0 0;
+        @media screen and (min-width: 1440px) {
+            margin: 30px 0 18px 0;
+        }
     }
     & p{
         text-align: center;
         margin: 0 34px 27px 34px;
+        @media screen and (min-width: 1440px) {
+            margin: 0 34px 18px 34px;
+        }
     }
     & .btn-gradient {
         margin-bottom: 57px;
+        @media screen and (min-width: 1440px) {
+            margin-bottom: 30px;
+        }
     }
 }

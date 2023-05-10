@@ -1,6 +1,9 @@
 .section-resto {
     background-color: $backgray-color;
     padding: 54px 17px 66px 17px;
+    @media screen and (min-width: 1440px) {
+        padding: 30px 17px;
+    }
     & h2 {
         margin: 0 0 28px 3px;
         width: 100%;
@@ -8,7 +11,7 @@
         margin-right: auto;
         max-width: 490px;
         @media screen and (min-width: 1440px) {
-            margin-left: 163px;
+            margin: 0 0 28px 163px;
         }
     }
     & nav {
@@ -51,6 +54,8 @@
     border-radius: 2px;
     box-shadow: 0px 2px 4px $boxshadow-color;
     color: $green-color;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 .card-txt {
@@ -62,6 +67,8 @@
 
 .sous-titre {
     margin: 0px;
+    font-weight: 300;
+    font-size: 17px;
 }
 
 .resto-heart {
