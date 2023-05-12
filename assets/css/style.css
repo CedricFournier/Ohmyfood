@@ -144,7 +144,7 @@ footer p {
   opacity: 0;
 }
 .card-page:hover .sliceX {
-  transform: translate(-59px);
+  margin-right: 0px;
 }
 .card-page .div-ingredient {
   padding: 12px 0 12px 15px;
@@ -345,6 +345,11 @@ footer p {
   align-items: center;
   justify-content: center;
 }
+@media screen and (min-width: 1440px) {
+  .header-logo {
+    height: 96px;
+  }
+}
 
 header img {
   width: 162px;
@@ -380,6 +385,11 @@ form {
   position: absolute;
   top: 24px;
   left: 23px;
+}
+@media screen and (min-width: 1440px) {
+  .fa-arrow-left-long {
+    top: 40px;
+  }
 }
 
 .section-explore {
@@ -418,7 +428,7 @@ form {
 .section-fonct {
   margin: 48px 20px 68px 20px;
 }
-@media screen and (min-width: 11440px) {
+@media screen and (min-width: 1440px) {
   .section-fonct {
     margin: 50px 20px;
   }
@@ -431,7 +441,7 @@ form {
 }
 @media screen and (min-width: 1440px) {
   .section-fonct h2 {
-    margin-left: 180px;
+    margin-left: 160px;
   }
 }
 
@@ -444,7 +454,7 @@ form {
 @media screen and (min-width: 1440px) {
   .group-div {
     flex-direction: row;
-    margin-left: 180px;
+    margin-left: 160px;
   }
 }
 
@@ -586,6 +596,7 @@ form {
 @media screen and (min-width: 1440px) {
   .titre-heart {
     justify-content: center;
+    margin: 0 0 2px 0;
   }
 }
 
@@ -624,8 +635,10 @@ footer {
   footer {
     display: flex;
     justify-content: flex-end;
+    align-items: flex-end;
     padding: 30px 26.42px;
     gap: 7px;
+    height: 54px;
   }
 }
 footer h3 {

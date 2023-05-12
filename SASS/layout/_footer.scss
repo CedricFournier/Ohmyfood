@@ -6,8 +6,10 @@ footer {
     @media screen and (min-width: 1440px) {
         display: flex;
         justify-content: flex-end;
+        align-items: flex-end;
         padding: 30px 26.42px;
         gap: 7px;
+        height: 54px;
     }
     & h3 {
         width: 137.58px;
