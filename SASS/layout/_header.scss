@@ -26,6 +26,7 @@ form {
 .edittext {
     background: $search-color;
     border: none;
+    width: 109px;
     &::placeholder {
         color: $footer-color;
         font-family: 'Roboto', sans-serif;

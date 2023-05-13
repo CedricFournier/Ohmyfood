@@ -9,11 +9,20 @@ body {
 
 body {
   margin: 0;
+  display: flex;
+  justify-content: center;
 }
 
 a {
   text-decoration: none;
   color: black;
+}
+
+.main-contain {
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  box-sizing: border-box;
 }
 
 h1.font-logo {
@@ -80,7 +89,6 @@ footer p {
 /******************btn-section-exploration******************/
 .btn-gradient {
   height: 50px;
-  width: 218px;
   color: #FFFFFF;
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   border-radius: 25px;
@@ -378,6 +386,7 @@ form {
 .edittext {
   background: #EAEAEA;
   border: none;
+  width: 109px;
 }
 .edittext::placeholder {
   color: #353535;
@@ -421,11 +430,12 @@ form {
     margin: 0 34px 18px 34px;
   }
 }
-.section-explore .btn-gradient {
+.section-explore .btn-explore {
   margin-bottom: 57px;
+  width: 218px;
 }
 @media screen and (min-width: 1440px) {
-  .section-explore .btn-gradient {
+  .section-explore .btn-explore {
     margin-bottom: 30px;
   }
 }
@@ -607,7 +617,7 @@ form {
 
 .menu {
   padding: 0 13px 0 13px;
-  max-width: 608px;
+  max-width: 634px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -629,6 +639,10 @@ hr {
   flex-direction: column;
   align-items: center;
   margin: 40px 0 0 0;
+}
+
+.btn-command {
+  width: 186px;
 }
 
 footer {

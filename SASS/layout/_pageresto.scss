@@ -37,7 +37,7 @@
 
 .menu {
     padding: 0 13px 0 13px;
-    max-width: 608px;
+    max-width: 634px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -57,4 +57,8 @@ hr {
 .btn-commander {
     @include item-colcenter;
     margin: 40px 0 0 0;
+}
+
+.btn-command {
+    width: 186px;
 }
