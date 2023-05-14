@@ -2,13 +2,18 @@
     height: 63px;
     width: 100%;
     @include item-center;
-    @media screen and (min-width: 1440px) {
+    @include desktop-only {
         height: 96px;
     }
 }
 
-header img {
-    @include logo-img;
+header {
+    background: $white-color;
+    position: relative;
+    z-index: 2;
+    & img {
+        @include logo-img;
+    }
 }
 
 form {
@@ -39,7 +44,7 @@ form {
     position: absolute;
     top: 24px;
     left: 23px;
-    @media screen and (min-width: 1440px) {
+    @include desktop-only {
         top: 40px;
     }
 }

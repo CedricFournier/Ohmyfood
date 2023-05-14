@@ -1,6 +1,6 @@
 .section-fonct {
     margin: 48px 20px 68px 20px;
-    @media screen and (min-width: 1440px) {
+    @include desktop-only {
         margin: 50px 20px;
     }
     & h2 {
@@ -8,7 +8,7 @@
         margin-right: auto;
         margin-bottom: 26px;
         width: 335px;
-        @media screen and (min-width: 1440px) {
+        @include desktop-only {
             margin-left: 160px;
         }
     }
@@ -17,7 +17,7 @@
 .group-div {
     @include item-colcenter;
     gap: 25px;
-    @media screen and (min-width: 1440px) {
+    @include desktop-only {
         flex-direction: row;
         margin-left: 160px;
     }
