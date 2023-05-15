@@ -20,6 +20,12 @@
     justify-content: center;
 }
 
+@mixin desktop-tablette {
+    @media screen and (min-width: map-get($breakpoints, tablette)) {
+      @content;
+    }
+}
+
 @mixin desktop-only {
     @media screen and (min-width: map-get($breakpoints, desktop)) {
       @content;

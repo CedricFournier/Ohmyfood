@@ -6,7 +6,7 @@
     object-fit: cover;
     width: 100%;
     height: 275px;
-    @include desktop-only {
+    @include desktop-tablette {
         position: relative;
         height: 500px;
         top: -96px;
@@ -22,7 +22,7 @@
     margin-top: -55px;
     width: 100%;
     max-width: 1055px;
-    @include desktop-only {
+    @include desktop-tablette {
         padding: 51px 0 40px 0;
         margin-top: -150px;
     }
@@ -35,7 +35,7 @@
     & h2 {
         margin: 0 24px 0 17px;
     }
-    @include desktop-only {
+    @include desktop-tablette {
         justify-content: center;
         margin: 0 0 2px 0;
     }
