@@ -1,11 +1,14 @@
 h1.font-logo {
     font-size: 30px;
+    @media screen and (min-width: 1024px) {
+        font-size: 33px;
+    }
 }
 
 .section-explore {
     & h1 {
         font-weight: 700;
-        @media screen and (min-width: 1440px) {
+        @media screen and (min-width: 1024px) {
             font-size: 40px;
         }
     }

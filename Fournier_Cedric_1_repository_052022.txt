@@ -1,4 +1,0 @@
-Repository
-https://github.com/CedricFournier/Ohmyfood
-Version en ligne
-https://cedricfournier.github.io/Ohmyfood/

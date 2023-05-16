@@ -12,7 +12,12 @@ header {
     position: relative;
     z-index: 2;
     & img {
-        @include logo-img;
+        width: 162px;
+        height: 34px;
+        @include desktop-only {
+            width: 200px;
+            height: 34px;
+        }
     }
 }
 
